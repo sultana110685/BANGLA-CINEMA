@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Era of Bangla Cinema</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(to right, #000, #222);
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+      color: gold;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #1a1a1a;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .hero {
+      height: 300px;
+      background: url('https://via.placeholder.com/1200x300') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: gold;
+    }
+    .section {
+      padding: 30px;
+    }
+    .movies, .actors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>Golden Era of Bangla Cinema</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#movies">Movies</a>
+  <a href="#actors">Actors</a>
+  <a href="#about">About</a>
+</nav>
+
+<div class="hero">
+  Celebrate Legends of Bangla Cinema
+</div>
+
+<div class="section" id="movies">
+  <h2>Popular Movies</h2>
+  <div class="movies">
+    <div class="card">
+      <img src="https://via.placeholder.com/150">
+      <p>Movie 1</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150">
+      <p>Movie 2</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150">
+      <p>Movie 3</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="actors">
+  <h2>Famous Actors</h2>
+  <div class="actors">
+    <div class="card">
+      <img src="https://via.placeholder.com/150">
+      <p>Salman Shah</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150">
+      <p>Shabnur</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150">
+      <p>Manna</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="about">
+  <h2>About</h2>
+  <p>This website is dedicated to the golden era of Bangla cinema, showcasing legendary actors, movies, and unforgettable memories.</p>
+</div>
+
+<footer>
+  © 2026 Bangla Cinema | Designed for You
+</footer>
+
+</body>
+</html>
