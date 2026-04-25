@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BanglaFlix - Bangla Cinema Platform</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#0b0b0b;
+      color:white;
+    }
+
+    /* NAVBAR */
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 30px;
+      background:#111;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .logo{
+      color:red;
+      font-size:22px;
+      font-weight:bold;
+    }
+
+    nav a{
+      color:white;
+      margin:0 10px;
+      text-decoration:none;
+    }
+
+    nav a:hover{
+      color:red;
+    }
+
+    /* HERO */
+    .hero{
+      height:85vh;
+      background:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1500&q=80') center/cover;
+      display:flex;
+      align-items:flex-end;
+      padding:60px;
+      position:relative;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:linear-gradient(to top, black, transparent);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:600px;
+    }
+
+    .hero h1{
+      font-size:40px;
+      color:white;
+    }
+
+    .hero p{
+      margin:10px 0;
+      color:#ccc;
+    }
+
+    .btn{
+      padding:10px 15px;
+      margin-right:10px;
+      border:none;
+      cursor:pointer;
+      background:red;
+      color:white;
+      border-radius:4px;
+    }
+
+    /* ROWS */
+    .row{
+      padding:30px;
+    }
+
+    .row h2{
+      margin-bottom:15px;
+      color:red;
+    }
+
+    .row-posters{
+      display:flex;
+      overflow-x:auto;
+      gap:10px;
+    }
+
+    .row-posters::-webkit-scrollbar{
+      display:none;
+    }
+
+    .poster{
+      min-width:160px;
+      height:220px;
+      background:#222;
+      border-radius:6px;
+      overflow:hidden;
+      transition:0.3s;
+    }
+
+    .poster:hover{
+      transform:scale(1.1);
+    }
+
+    .poster img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#111;
+      color:#777;
+      margin-top:30px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🎬 BanglaFlix</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#movies">Movies</a>
+    <a href="#actors">Actors</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Golden Era of Bangla Cinema</h1>
+    <p>Explore legendary Bangla movies and stars</p>
+    <button class="btn">Watch Now</button>
+    <button class="btn">Details</button>
+  </div>
+</section>
+
+<!-- MOVIES -->
+<section class="row" id="movies">
+  <h2>🎥 Trending Movies</h2>
+  <div class="row-posters">
+    <div class="poster"><img src="https://via.placeholder.com/300x400"></div>
+    <div class="poster"><img src="https://via.placeholder.com/300x400"></div>
+    <div class="poster"><img src="https://via.placeholder.com/300x400"></div>
+    <div class="poster"><img src="https://via.placeholder.com/300x400"></div>
+  </div>
+</section>
+
+<!-- ACTORS -->
+<section class="row" id="actors">
+  <h2>🌟 Legendary Actors</h2>
+  <div class="row-posters">
+    <div class="poster"><img src="https://via.placeholder.com/300x400"></div>
+    <div class="poster"><img src="https://via.placeholder.com/300x400"></div>
+    <div class="poster"><img src="https://via.placeholder.com/300x400"></div>
+  </div>
+</section>
+
+<footer>
+  © 2026 BanglaFlix | Bangla Cinema Platform
+</footer>
+
+</body>
+</html>
